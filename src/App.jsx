@@ -1,6 +1,7 @@
 import './App.css'
-import { Header,CanvasContainer, Toolbar } from './components'
-
+import { Toolbar } from './components/Toolbar'
+import { CanvasContainer } from './components/CanvasContainer'
+import { Header } from './components/Header'
 
 function App() {
   

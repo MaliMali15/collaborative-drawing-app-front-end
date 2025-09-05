@@ -1,4 +1,4 @@
-import { SelectionTool,CircleTool,QuadTool,TextTool,DrawTool,EraserTool, LineTool } from ".."
+import { SelectionTool, TextTool, LineTool,CircleTool,QuadTool,DrawTool,EraserTool } from "."
 
 function Toolbar() {
   return (

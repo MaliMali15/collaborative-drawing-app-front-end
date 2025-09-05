@@ -1,8 +1,4 @@
-import { RoomName } from ".."
-import { Count } from ".."
-import { LeaveBtn } from ".."
-import { CopyLink } from ".."
-import { SettingsBtn } from ".."
+import { RoomName,Count,SettingsBtn,CopyLink,LeaveBtn } from "."
 
 function Header() {
   return (
