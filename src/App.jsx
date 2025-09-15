@@ -3,7 +3,9 @@ import { Toolbar } from './components/Toolbar'
 import { CanvasContainer } from './components/CanvasContainer'
 import { Header } from './components/Header'
 import { Chatbox } from './components/Chatbox'
-import { Member, MembersList } from './components/MembersList'
+import { MembersList } from './components/MembersList'
+import { ToolbarOptions } from './components/ToolbarOptions'
+import { ToolOptions } from './components/ToolbarOptions'
 
 function App() {
   
@@ -12,7 +14,8 @@ function App() {
       <Toolbar />
       <Chatbox/>
       <MembersList />
-      
+      <ToolbarOptions />
+      <ToolOptions/>
       <Header />
       <CanvasContainer />
       
