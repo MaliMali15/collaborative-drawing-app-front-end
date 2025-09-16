@@ -1,30 +1,29 @@
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu.jsx"
 
-function ToolOptions() {
+import { ColorPalette } from "./index.js"
+import { ColorWheelIcon } from "@radix-ui/react-icons"
+
+function ColorTool() {
   return (
     <>
-        <div className='h-max w-max flex'>
-            <div>
+        
+            
                 <DropdownMenu>
                     <DropdownMenuTrigger>
-                        Color Picker
+                        <ColorWheelIcon className="transition-colors duration-150 hover:text-white"/>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>
-                        
+                        <ColorPalette/>
                     </DropdownMenuContent>
                 </DropdownMenu>
-            </div>
-            
-        </div>  
+             
+          
     </>
   )
 }
 
-export default ToolOptions
+export default ColorTool

@@ -1,5 +1,6 @@
 import ToolbarOptions from "./ToolbarOptions";
 import UndoRedo from "./UndoRedo";
-import ToolOptions from "./ToolOptions";
+import ColorTool from "./ColorTool";
+import ColorPalette from "./ColorPalette";
 
-export {ToolbarOptions,UndoRedo,ToolOptions}
+export {ToolbarOptions,UndoRedo,ColorTool,ColorPalette}

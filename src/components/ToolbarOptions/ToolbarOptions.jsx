@@ -1,18 +1,20 @@
-import { UndoRedo } from "."
+import { ColorTool, UndoRedo } from "."
 import { ValueNoneIcon } from "@radix-ui/react-icons"
 
 function ToolbarOptions() {
   return (
       <>
-        <div className="flex flex-1 items-center bg-black/20 rounded-2xl h-16 m-4">
-            <div className="flex gap-8 mx-18 h-max w-max">  
+        <div className="flex items-center bg-black/20 h-max w-max m-4">
+            <div className=" p-2 border border-black/40 transition-colors duration-150 hover:bg-black/40">  
                 <UndoRedo/>
-                <button className="group hover:bg-black/20 p-2">
-                    <ValueNoneIcon className="group-hover:text-white"/>
+            </div>
+            <div className="px-3 py-2 border-t border-b border-black/40 group transition-colors duration-150 hover:bg-black/40">
+                <button>
+                    <ValueNoneIcon className="group-hover:text-white transition-colors duration-150 h-[13.25px] w-[13.25px] "/>
                 </button>
             </div>
-            <div>
-                
+            <div className="h-max w-max px-3 py-2 border border-black/40">
+              <ColorTool/>
             </div>
         </div>
       </>
