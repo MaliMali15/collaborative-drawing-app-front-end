@@ -10,12 +10,10 @@ function Header() {
             <div className="flex w-max items-center justify-center mx-5">
                 <Count count={10 } />
             </div>
-            <div className="flex items-center h-full absolute right-7">
-              <LeaveBtn/>
-            </div>
-            <div className="flex gap-3 items-center h-full absolute right-47">
+            <div className="flex gap-3 items-center h-full absolute right-0">
               <SettingsBtn/>
               <CopyLink /> 
+              <LeaveBtn/>
             </div>
         </div>
       </>

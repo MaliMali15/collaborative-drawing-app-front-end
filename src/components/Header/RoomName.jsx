@@ -25,7 +25,7 @@ function RoomName() {
   return (
       <>
           <div onClick={editHandler} className=" flex items-center p-3 w-28 h-16" >
-              {isEditable ? (<Input value={value} onChange={valueHandler} onBlur={blurHandler} onKeyDown={keyDownHandler} autoFocus className="p-0 min-w-0 h-max" />) : (<p className="break-words text-gray-800 min-w-0 h-max"> { value } </p>)}    
+              {isEditable ? (<Input value={value} onChange={valueHandler} onBlur={blurHandler} onKeyDown={keyDownHandler} autoFocus className="p-0 min-w-0 h-max border-black/20" />) : (<p className="break-words text-gray-800 min-w-0 h-max"> { value } </p>)}    
           </div>
           
     </>

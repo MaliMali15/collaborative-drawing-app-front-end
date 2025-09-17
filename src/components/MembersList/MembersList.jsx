@@ -5,7 +5,7 @@ import { Member } from "."
 function MembersList() {
   return (
     <>
-      <ScrollArea className="flex bg-black/40 h-40 w-max m-4 overflow-y-auto ">
+      <ScrollArea className="flex bg-black/40 h-40 w-max  overflow-y-auto ">
         <div className="flex flex-col min-h-full">
           <Member />
           <Member />

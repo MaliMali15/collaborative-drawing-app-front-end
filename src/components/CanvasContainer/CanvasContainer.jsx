@@ -1,19 +1,50 @@
+import { Header } from "../Header"
+import { Toolbar } from "../Toolbar"
+import { ToolbarOptions } from "../ToolbarOptions"
+import { Chatbox } from "../Chatbox"
+import { MembersList } from "../MembersList"
+
 function CanvasContainer() {
   return (
-      <div className=" relative bg-[#E2FDFF] h-screen w-full"> 
-        <div className="w-full h-18 border-b border-black">
-            
-        </div>
-        <div className=" absolute left-0 h-screen top-0 w-28 border-r border-black">
-          
-        </div>  
-        <div className="absolute bottom-0  w-full h-26 border-t border-black">
+    <>
+    <div className="flex flex-col h-screen w-screen">
+      <header className="h-14 border-b border-black/20">
+        <Header />
+      </header>
 
-        </div>
-        <div className="absolute right-0 top-0  h-full w-80 border-l border-black">
-            
-        </div>
+      <div className="flex flex-1">
+        {/* Left Sidebar */}
+        <aside className="w-20 flex flex-col justify-between ">
+          {/* Toolbar at top */}
+          <div className="flex justify-center mt-20">
+            <Toolbar />
+          </div>
+        </aside>
+
+        {/* Main Canvas Area */}
+        <main className="flex-1 relative bg-white">
+          {/* Reserve this space for your canvas */}
+            <canvas className="w-full h-full" />
+            <div className="absolute bottom-4 left-1/2">
+              <ToolbarOptions />
+            </div>
+        </main>
+
+        {/* Right Sidebar */}
+        <aside className="w-90 flex flex-col">
+          {/* Chatbox at top */}
+          <div className="h-max w-max p-4 overflow-y-auto ">
+            <Chatbox />
+          </div>
+          {/* Members list at bottom */}
+          <div className="h-max w-full p-4">
+            <MembersList />
+          </div>
+        </aside>
+      </div>
     </div>
+
+    </>
   )
 }
 

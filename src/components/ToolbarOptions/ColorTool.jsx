@@ -13,7 +13,7 @@ function ColorTool() {
         
             
                 <DropdownMenu>
-                    <DropdownMenuTrigger>
+                    <DropdownMenuTrigger className="focus:outline-none focus:ring-0">
                         <ColorWheelIcon className="transition-colors duration-150 hover:text-white"/>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent>

@@ -11,14 +11,7 @@ function App() {
   
   return (
     <>
-      <Toolbar />
-      <Chatbox/>
-      <MembersList />
-      <ToolbarOptions />
-      
-      <Header />
       <CanvasContainer />
-      
     </>
   )
 }

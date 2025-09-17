@@ -12,7 +12,7 @@ function MessageList() {
     })
   return (
       <>
-        <ScrollArea ref={scrollRef} className="border border-black/50 w-90 h-90 bg-black/10 overflow-y-auto">
+        <ScrollArea ref={scrollRef} className="border border-black/50 w-80 h-100 bg-black/10 overflow-y-auto">
               <div className="flex flex-col min-h-full justify-end">
                  <Message/>
                  <Message/>
@@ -25,6 +25,14 @@ function MessageList() {
                  <Message/>
                  <Message/>
                  <Message/>
+                 <Message/>
+                 <Message/> 
+                 <Message/>
+                 <Message/> 
+                 <Message/>
+                 <Message/> 
+                 <Message/>
+                 <Message/> 
                  <Message/>
                  <Message/> 
               </div>    

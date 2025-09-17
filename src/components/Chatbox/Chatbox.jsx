@@ -4,7 +4,7 @@ import { ChatInput } from "."
 function Chatbox() {
   return (
       <>
-        <div className="w-max h-max m-4">
+        <div className="w-max h-max">
             <MessageList/>
             <ChatInput/>
         </div>
