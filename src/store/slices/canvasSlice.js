@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   strokes: [],          // all strokes drawn
-  currentTool: "pen",   // pen, eraser, line, rectangle, text
+  currentTool: "pen",   // pen, eraser, line, rectangle, text, etc.
   color: "#000000",
   width: 2,
 };

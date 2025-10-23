@@ -16,12 +16,7 @@ import { DotsHorizontalIcon} from "@radix-ui/react-icons"
 function Member() {
   return (
       <>
-          <div className="flex gap-3 w-80 p-2 border-b border-black/60 h-max items-center bg-black/20">
-              <div className=" mx-1">
-                  <Avatar className="h-6 w-6">
-                      <AvatarImage src="https://avatars.githubusercontent.com/u/158768999?s=48&v=4" />
-                  </Avatar>
-              </div>
+          <div className="flex justify-between w-80 p-2 border-b border-black/60 h-max items-center bg-black/20">
               <div className="flex items-center w-44">
                   <p className="min-w-0 truncate">helladadadahfajfpoajwfpoajpfojapofjapojfo</p>
                   <div className="flex items-center mx-2">

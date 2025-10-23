@@ -3,6 +3,7 @@ import { Toolbar } from "../Toolbar"
 import { ToolbarOptions } from "../ToolbarOptions"
 import { Chatbox } from "../Chatbox"
 import { MembersList } from "../MembersList"
+import {CanvasBoard} from "../Canvas"
 
 function CanvasContainer() {
   return (
@@ -24,7 +25,7 @@ function CanvasContainer() {
         {/* Main Canvas Area */}
         <main className="flex-1 relative bg-white">
           {/* Reserve this space for your canvas */}
-            <canvas className="w-full h-full" />
+            <CanvasBoard/>
             <div className="absolute bottom-4 left-1/2">
               <ToolbarOptions />
             </div>
