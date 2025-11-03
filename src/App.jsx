@@ -1,19 +1,16 @@
 import './App.css'
-import { Toolbar } from './components/Toolbar'
-import { CanvasContainer } from './components/CanvasContainer'
-import { Header } from './components/Header'
-import { Chatbox } from './components/Chatbox'
-import { MembersList } from './components/MembersList'
-import { ToolbarOptions } from './components/ToolbarOptions'
+import { Routes, Route } from 'react-router-dom';
+import { CanvasContainer } from './pages';
+import { LandingPage } from './pages'
 
 
 function App() {
-  
   return (
-    <>
-      <CanvasContainer />
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/board/:roomId" element={<CanvasContainer/>} />
+    </Routes>
+  );
 }
 
 export default App

@@ -1,11 +1,13 @@
-import { Header } from "../Header"
-import { Toolbar } from "../Toolbar"
-import { ToolbarOptions } from "../ToolbarOptions"
-import { Chatbox } from "../Chatbox"
-import { MembersList } from "../MembersList"
-import {CanvasBoard} from "../Canvas"
+import { Header } from "../components/Header"
+import { Toolbar } from "../components/Toolbar"
+import { ToolbarOptions } from "../components/ToolbarOptions"
+import { Chatbox } from "../components/Chatbox"
+import { MembersList } from "../components/MembersList"
+import { CanvasBoard } from "../components/Canvas"
+
 
 function CanvasContainer() {
+  
   return (
     <>
     <div className="flex flex-col h-screen w-screen">
@@ -38,7 +40,7 @@ function CanvasContainer() {
             <Chatbox />
           </div>
           {/* Members list at bottom */}
-          <div className="h-max w-full p-4">
+          <div className="h-max w-max p-4">
             <MembersList />
           </div>
         </aside>

@@ -3,11 +3,14 @@ import App from './App.jsx'
 import { Provider } from 'react-redux'
 import store from './store/index.js'
 import { initSocket } from './utils/socket.js'
+import { BrowserRouter } from 'react-router-dom'
 
 initSocket()
 
 createRoot(document.getElementById('root')).render(
-    <Provider store={store}>
-        <App /> 
-    </Provider>
+    <BrowserRouter>
+        <Provider store={store}>
+            <App /> 
+        </Provider>
+    </BrowserRouter>
 )
